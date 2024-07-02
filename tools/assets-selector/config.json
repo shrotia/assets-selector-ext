@@ -26,6 +26,7 @@
           "element": "checkbox",
           "name": "type",
           "defaultValue": ["directory", "file"],
+          "excludeTags": ["directory", "file"],
           "readOnly": true,
           "options": [
             {
@@ -46,6 +47,7 @@
       "fields": [
         {
           "defaultValue": ["image/jpeg", "image/png", "image/tiff"],
+          "excludeTags": ["image/jpeg", "image/png", "image/tiff"],
           "element": "checkbox",
           "name": "type",
           "options": [
@@ -109,6 +111,5 @@
       "header": "Expiration Status",
       "groupKey": "ExpirationGroup"
     }
-  ],
-  "hideFilters": "true"
+  ]
 }
