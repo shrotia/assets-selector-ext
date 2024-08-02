@@ -83,6 +83,24 @@
       ],
       "header": "Expiration Status",
       "groupKey": "ExpirationGroup"
+    },
+    {
+      "header": "Asset Status",
+      "groupKey": "AssetStatusGroup",
+      "fields": [
+        {
+          "element": "radiogroup",
+          "name": "property",
+          "defaultValue": ["dam:assetStatus==approved"],
+          "readOnly": true,
+          "options": [
+            {
+              "label": "Approved",
+              "value": "dam:assetStatus==approved"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
