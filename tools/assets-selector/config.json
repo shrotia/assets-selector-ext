@@ -88,7 +88,7 @@
       "fields": [
         {
           "element": "drop-down",
-          "name": "metadata.embedded.dc:language",
+          "name": "property=metadata.embedded.dc:language",
           "orientation": "vertical",
           "options": [
             {
