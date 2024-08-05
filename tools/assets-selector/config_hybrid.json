@@ -14,7 +14,7 @@
   "blockTemplate": [
     {
       "mimeType": "video/*",
-      "value": "<table border='1' style=\"width:100%\">\n  <tr>\n        <td style=\"background-color:#f5680a;color:#fff\">${blockName}</td>\n      </tr>\n      <tr>\n        <td>\n            <div style=\"display: flex; justify-content: space-between; align-items: center;\">\n                <img width=\"319\" height=\"319\" src=${posterUrl} alt=${asset.name}>\n                <a href=${rendition.href}>${asset.name}</a>\n            </div>\n        </td>\n      </tr>\n    </table>"
+      "value": "<table border='1' style=\"width:100%\">\n  <tr>\n        <td style=\"background-color:#f5680a;color:#fff\">${blockName}</td>\n      </tr>\n      <tr>\n        <td style=\"border-bottom: none;\"><img src=${posterUrl} alt=${asset.name}></td>\n      </tr>\n      <tr>\n        <td style=\"border-top: none;\"><a href=${rendition.href}>${asset.name}</a></td>\n      </tr>   </table>"
     }
   ],
   "filterSchema": [
