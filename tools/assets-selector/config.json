@@ -17,6 +17,12 @@
       "value": "<table border='1' style=\"width:100%\">\n  <tr>\n        <td style=\"background-color:#f5680a;color:#fff\">${blockName}</td>\n      </tr>\n      <tr>\n        <td style=\"border-bottom: none;\"><img src=${posterUrl} alt=${asset.name}></td>\n      </tr>\n      <tr>\n        <td style=\"border-top: none;\"><a href=${rendition.href}>${asset.name}</a></td>\n      </tr>   </table>"
     }
   ],
+  "copyMode": [
+    {
+      "mimeType": "image/*",
+      "value": "use-alt-text"
+    }
+  ],
   "filterSchema": [
     {
       "header": "File Types",
