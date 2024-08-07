@@ -650,6 +650,28 @@ function decorateBlocks(main) {
   main.querySelectorAll('div.section > div > div').forEach(decorateBlock);
 }
 
+function decorateDeliveryAssets (main) {
+    const pictureElements = main.querySelectorAll('picture');
+    pictureElements.forEach((pictureElement) => {
+        const imgElement = pictureElement.querySelector('img');
+        const altText = imgElement.getAttribute('alt');
+       try {
+         const deliveryObject = JSON.parse(decodeURIComponent(altText));
+         const deliveryUrl = deliveryObject.deliveryUrl;
+         const alt = deliveryObject.altText;
+         const newPictureElement = document.createElement('picture');
+            const imageElement = document.createElement('img');
+            imageElement.setAttribute('loading', 'lazy');
+            imageElement.setAttribute('src', `${deliveryUrl}?width=750&format=wepb&optimize=medium`);
+            imageElement.setAttribute('alt', alt);
+            newPictureElement.appendChild(imageElement);
+            pictureElement.replaceWith(newPictureElement);
+       } catch (error) {
+         return;
+       }
+    });
+}
+
 /**
  * Loads a block named 'header' into header
  * @param {Element} header header element
@@ -708,6 +730,7 @@ export {
   decorateIcons,
   decorateSections,
   decorateTemplateAndTheme,
+  decorateDeliveryAssets,
   fetchPlaceholders,
   getMetadata,
   loadBlock,
