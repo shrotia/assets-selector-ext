@@ -2,7 +2,7 @@
   "blockName": [
     {
       "mimeType": "video/*",
-      "value": "Core Embed"
+      "value": "Embed"
     }
   ],
   "headerStyle": [
