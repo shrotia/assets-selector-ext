@@ -58,8 +58,13 @@
         {
           "element": "taggroup",
           "name": "property=metadata.application.xcm:keywords.id",
-          "defaultValue": [],
-          "options": [],
+          "defaultValue": ["experience-fragments:wknd/products/surfing"],
+          "options": [
+            {
+              "label": "Surfing",
+              "value": "experience-fragments:wknd/products/surfing"
+            }
+          ],
           "columns": 3
         }
       ]

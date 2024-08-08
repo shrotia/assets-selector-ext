@@ -30,7 +30,7 @@
       "fields": [
         {
           "defaultValue": ["image/*", "video/*"],
-          "excludeTags": ["image/*", "video/*"],
+          "excludeTags": ["image/*", "video/*", "application/pdf"],
           "element": "checkbox",
           "name": "type",
           "options": [
