@@ -12,7 +12,7 @@
       "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
     },
     {
-      "id": "asset-library",
+      "id": "asset-library-v1",
       "title": "AEM Assets Library - Contextual",
       "environments": ["edit"],
       "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html?extConfigUrl=https://main--assets-selector-ext--shrotia.hlx.page/tools/assets-selector/config-contextual.json",
