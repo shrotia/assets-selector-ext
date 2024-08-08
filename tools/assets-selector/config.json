@@ -2,7 +2,7 @@
   "blockName": [
     {
       "mimeType": "video/*",
-      "value": "Embed"
+      "value": "Video"
     }
   ],
   "headerStyle": [
@@ -58,13 +58,8 @@
         {
           "element": "taggroup",
           "name": "property=metadata.application.xcm:keywords.id",
-          "defaultValue": ["pfizer:pfe-brands/cibinqo"],
-          "options": [
-            {
-              "label": "CIBINQO",
-              "value": "pfizer:pfe-brands/cibinqo"
-            }
-          ],
+          "defaultValue": [],
+          "options": [],
           "columns": 3
         }
       ]
